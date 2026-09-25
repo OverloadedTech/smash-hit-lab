@@ -1,2 +1,2 @@
 -r tools/requirements.txt
-playwright>=1.40,<2
+playwright>=1.63.0,<2
