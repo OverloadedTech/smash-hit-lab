@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mediocre native scene editor</title><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head><body>
+<header><strong id="title">Native scene editor</strong><button id="connect">Read scene from game · pause</button><button id="open">Open scene</button><button id="download">Save scene file</button><input id="file" type="file" accept=".json" hidden></header>
+<main><section id="viewport"><div id="viewbar"><button id="translate">Move</button><button id="rotate">Rotate</button><button id="scale">Scale</button><button id="focus">Focus</button><button id="undo">Undo</button><button id="redo">Redo</button><label>FOV <input id="fov" type="number" min="20" max="140" value="65"></label></div><div id="help">Right drag to orbit · wheel to zoom · click to select · Ctrl/Shift-click to add · drag the colored handles to edit</div></section>
+<aside><p id="status" role="status">Start a level in a Lab APK, then read its scene.</p>
+<div class="row"><button id="all">Select all</button><button id="clear">Clear</button></div><label><input type="checkbox" id="multi"> Add to selection</label>
+<h2 id="selection">No selection</h2><p id="selectionNote"></p>
+<div id="transform"></div><div class="row"><button id="applyFields">Apply fields locally</button><button id="reset">Reset selected</button></div>
+<h2>Move together</h2><label>Step <input id="step" type="number" min="0.001" step="0.1" value="1"></label><div id="steps"></div>
+<h2>Apply to the game</h2><p>Apply pauses the world and changes the actual selected bodies. Save also keeps those edits for future runs.</p>
+<button id="apply">Apply selected to game</button><button id="saveGame">Apply + save for next run</button>
+<h2>Objects</h2><input id="filter" placeholder="Filter by name, type or section"><select id="objects" size="12" aria-label="Native objects"></select>
+<details><summary>Selected native information</summary><pre id="detail"></pre></details><details><summary>Loaded level state</summary><pre id="sections"></pre></details>
+</aside></main><script type="module" src="editor.js"></script></body></html>

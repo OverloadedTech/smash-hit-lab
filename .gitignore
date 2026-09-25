@@ -1,0 +1,100 @@
+# Analysis and artifacts
+analysis/
+artifacts/
+build/
+incoming/
+dev/assets/
+
+# Node
+node_modules/
+desktop/web/vendor/
+desktop/web/.playwright/
+desktop/projects/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+*.egg
+dist/
+*.whl
+
+# Virtual environments
+.virtualenv/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+*.tmp
+*.bak
+
+# Executables
+*.apk
+*.zip
+
+# Environment
+.env
+.env.local
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# Results
+experiments/*.json
+experiments/*.jsonl
+experiments/*.csv
+experiments/*.png
+
+# Downloaded toolchains and generated exports
+tools/downloads/
+tools/sdk/
+tools/jdk/
+tools/ghidra/
+tools/jadx/
+tools/apktool.jar
+tools/dobby-stable/
+tools/dobby-stable-source.json
+public-research/
+repos/
+
+# Private game data and signing material, including nested experiment output
+*.apks
+*.xapk
+*.so
+*.dex
+*.glb
+*.mesh
+*.mtx
+*.ogg
+*.mp3
+*.dat
+*.keystore
+*.jks
+*.pem
+*.p12
+.env.*
+experiments/**/*.json
+experiments/**/*.jsonl
+experiments/**/*.csv
+experiments/**/*.png
+experiments/**/progression.xml
+.ruff_cache/

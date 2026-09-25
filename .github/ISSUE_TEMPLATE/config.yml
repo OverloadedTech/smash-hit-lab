@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/OverloadedTech/smash-hit-lab/security/advisories/new
+    about: Report security issues privately instead of opening a public issue.
+  - name: Documentation
+    url: https://github.com/OverloadedTech/smash-hit-lab/blob/main/docs/README.md
+    about: Read the research notes and verification scope before filing an issue.
+  - name: Game binaries and assets
+    url: https://github.com/OverloadedTech/smash-hit-lab/blob/main/LICENSING.md
+    about: Do not attach game files to an issue. This explains what may be shared.
